@@ -1,0 +1,134 @@
+html {
+  height: 100%; // Footer at bottom
+
+  font-size: calc(100vw / 1600 * 10);
+
+  @media (max-width: 1024px) {
+    font-size: calc(100vw / 768 * 10);
+  }
+
+  @media (max-width: 767px) {
+    font-size: calc(100vw / 500 * 10);
+  }
+
+  @media (max-width: 500px) {
+    font-size: calc(100vw / 375 * 10);
+  }
+}
+
+body {
+  display: flex; // Footer at bottom
+  flex-direction: column; // Footer at bottom
+  height: 100%; // Footer at bottom
+  color: #000;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  background: #fff;
+  font-family: $font-family;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  flex-shrink: 0; // Footer at bottom
+}
+
+.main {
+  position: relative;
+  flex: 1 0 auto; // Footer at bottom
+}
+
+.footer {
+  z-index: 10;
+  flex-shrink: 0; // Footer at bottom
+  margin-top: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+  border: none;
+
+  table & {
+    max-width: none;
+  }
+}
+
+.container {
+  max-width: 156rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+
+  clip: rect(0 0 0 0);
+}
+
+.section {
+  padding-bottom: 30rem;
+
+  @media (max-width: $lg) {
+    padding-bottom: 6rem;
+  }
+
+  &__title {
+    font-family: $font-family;
+    padding-bottom: 10rem;
+
+    @extend %text-82;
+
+    @media (max-width: $lg) {
+      padding-bottom: 3rem;
+    }
+  }
+}
+
+.btn {
+  @extend %flex-center;
+  background-color: $black;
+  color: #fff;
+  text-align: center;
+  transition: 0.3s all;
+
+  svg {
+    width: 4.1rem;
+    height: 2.2rem;
+    margin-left: 3rem;
+
+    path {
+      transition: 0.3s stroke;
+    }
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: $green;
+    }
+  }
+
+  &--border {
+    background-color: transparent;
+    border: 0.1rem solid #000;
+    color: #000;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: #000;
+        color: #fff;
+
+        svg path {
+          stroke: #fff;
+        }
+      }
+    }
+  }
+}

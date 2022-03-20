@@ -1,0 +1,404 @@
+<div class="tabs">
+  <ul class="tabs__nav">
+    @@loop("blocks/others/tabs/elements/nav-item.html", [
+      {
+        "text": "svarokmaster.by",
+        "isActive": true,
+        "dataAttr": "1"
+      },
+      {
+        "text": "ma-bel.by",
+        "isActive": false,
+        "dataAttr": "2"
+      },
+      {
+        "text": "happytoys.by",
+        "isActive": false,
+        "dataAttr": "3"
+      },
+      {
+        "text": "matem.by",
+        "isActive": false,
+        "dataAttr": "4"
+      },
+      {
+        "text": "unidragmet.by",
+        "isActive": false,
+        "dataAttr": "5"
+      },
+      {
+        "text": "mkb.by",
+        "isActive": false,
+        "dataAttr": "6"
+      },
+    ])
+  </ul>
+  <div class="tabs__content">
+    <div class="tabs__content-item fadeTab show" data-tab-content="1">
+      <dl class="tabs__top-list">
+        @@loop("blocks/others/tabs/elements/top-item.html", [
+          {
+            "term": "Запуск нового сайта:",
+            "descr": "апрель 2015 г."
+          },
+          {
+            "term": "Тематика:",
+            "descr": "производство и продажа изделий из натурального камня"
+          }
+        ])
+      </dl>
+      <div class="tabs__bottom-wrap">
+        @@loop("blocks/others/tabs/elements/bottom-item.html", [
+          {
+            "title": "Комплекс мер применяемых нами к проекту для&nbsp;достижения поставленных задач клиентом:",
+            "isList": true,
+            "listItem1": "Разработка удобного и продающего сайта",
+            "listItem2": "Вывод сайта в топ по коммерческим запросам",
+            "listItem3": "Увеличение поискового трафика",
+            "isBtn": false,
+          },
+          {
+            "title": "Результаты проведенных работ:",
+            "isList": true,
+            "listItem1": "96% запросов в ТОП-10 и рост продолжается",
+            "listItem2": "88% запросов в ТОП-3 видимость сайта по целевым и ключевым запросам растет",
+            "listItem3": "Рост трафика из поисковых систем в 6 раз и рост продолжается",
+            "isBtn": false
+          },
+          {
+            "title": "Статистика:",
+            "isList": false,
+            "isBtn": false,
+            "company": "Яндекс",
+            "keywordFirst": "мраморная плитка купить",
+            "keywordFirstPlace": "2",
+            "keywordSecond": "гранитная лестница",
+            "keywordSecondPlace": "1",
+            "keywordThird": "ступени из камня",
+            "keywordThirdPlace": "3"
+          },
+          {
+            "isList": false,
+            "isBtn": true,
+            "company": "Google",
+            "keywordFirst": "подоконники из оникса",
+            "keywordFirstPlace": "1, 2, 3",
+            "keywordSecond": "гранитная брусчатка",
+            "keywordSecondPlace": "1",
+            "keywordThird": "столешницы из камня купить",
+            "keywordThirdPlace": "1",
+          },
+        ])
+      </div>
+      <div class="tabs__img-wrap">
+        <img class="lazy tabs__img" src="./assets/images/pixel.png" data-src="./assets/images/tabs/img_1.jpg" alt="картинка">
+        <img class="lazy tabs__img" src="./assets/images/pixel.png" data-src="./assets/images/tabs/img_2.jpg" alt="картинка">
+      </div>
+    </div>
+    <div class="tabs__content-item fadeTab" data-tab-content="2">
+      <dl class="tabs__top-list">
+        @@loop("blocks/others/tabs/elements/top-item.html", [
+          {
+            "term": "Запуск нового сайта:",
+            "descr": "апрель 2018 г."
+          },
+          {
+            "term": "Тематика:",
+            "descr": "производство и продажа изделий из натурального камня"
+          }
+        ])
+      </dl>
+      <div class="tabs__bottom-wrap">
+        @@loop("blocks/others/tabs/elements/bottom-item.html", [
+          {
+            "title": "Комплекс мер применяемых нами к проекту для&nbsp;достижения поставленных задач клиентом:",
+            "isList": true,
+            "listItem1": "Разработка удобного и продающего сайта",
+            "listItem2": "Вывод сайта в топ по коммерческим запросам",
+            "listItem3": "Увеличение поискового трафика",
+            "isBtn": false,
+          },
+          {
+            "title": "Результаты проведенных работ:",
+            "isList": true,
+            "listItem1": "96% запросов в ТОП-10 и рост продолжается",
+            "listItem2": "88% запросов в ТОП-3 видимость сайта по целевым и ключевым запросам растет",
+            "listItem3": "Рост трафика из поисковых систем в 6 раз и рост продолжается",
+            "isBtn": false
+          },
+          {
+            "title": "Статистика:",
+            "isList": false,
+            "isBtn": false,
+            "company": "Яндекс",
+            "keywordFirst": "мраморная плитка купить",
+            "keywordFirstPlace": "2",
+            "keywordSecond": "гранитная лестница",
+            "keywordSecondPlace": "1",
+            "keywordThird": "ступени из камня",
+            "keywordThirdPlace": "3"
+          },
+          {
+            "isList": false,
+            "isBtn": true,
+            "company": "Google",
+            "keywordFirst": "подоконники из оникса",
+            "keywordFirstPlace": "1, 2, 3",
+            "keywordSecond": "гранитная брусчатка",
+            "keywordSecondPlace": "1",
+            "keywordThird": "столешницы из камня купить",
+            "keywordThirdPlace": "1",
+          },
+        ])
+      </div>
+      <div class="tabs__img-wrap">
+        <img class="lazy tabs__img" src="./assets/images/pixel.png" data-src="./assets/images/tabs/img_1.jpg" alt="картинка">
+        <img class="lazy tabs__img" src="./assets/images/pixel.png" data-src="./assets/images/tabs/img_2.jpg" alt="картинка">
+      </div>
+    </div>
+    <div class="tabs__content-item fadeTab" data-tab-content="3">
+      <dl class="tabs__top-list">
+        @@loop("blocks/others/tabs/elements/top-item.html", [
+          {
+            "term": "Запуск нового сайта:",
+            "descr": "май 2012 г."
+          },
+          {
+            "term": "Тематика:",
+            "descr": "производство и продажа изделий из натурального камня"
+          }
+        ])
+      </dl>
+      <div class="tabs__bottom-wrap">
+        @@loop("blocks/others/tabs/elements/bottom-item.html", [
+          {
+            "title": "Комплекс мер применяемых нами к проекту для&nbsp;достижения поставленных задач клиентом:",
+            "isList": true,
+            "listItem1": "Разработка удобного и продающего сайта",
+            "listItem2": "Вывод сайта в топ по коммерческим запросам",
+            "listItem3": "Увеличение поискового трафика",
+            "isBtn": false,
+          },
+          {
+            "title": "Результаты проведенных работ:",
+            "isList": true,
+            "listItem1": "96% запросов в ТОП-10 и рост продолжается",
+            "listItem2": "88% запросов в ТОП-3 видимость сайта по целевым и ключевым запросам растет",
+            "listItem3": "Рост трафика из поисковых систем в 6 раз и рост продолжается",
+            "isBtn": false
+          },
+          {
+            "title": "Статистика:",
+            "isList": false,
+            "isBtn": false,
+            "company": "Яндекс",
+            "keywordFirst": "мраморная плитка купить",
+            "keywordFirstPlace": "2",
+            "keywordSecond": "гранитная лестница",
+            "keywordSecondPlace": "1",
+            "keywordThird": "ступени из камня",
+            "keywordThirdPlace": "3"
+          },
+          {
+            "isList": false,
+            "isBtn": true,
+            "company": "Google",
+            "keywordFirst": "подоконники из оникса",
+            "keywordFirstPlace": "1, 2, 3",
+            "keywordSecond": "гранитная брусчатка",
+            "keywordSecondPlace": "1",
+            "keywordThird": "столешницы из камня купить",
+            "keywordThirdPlace": "1",
+          },
+        ])
+      </div>
+      <div class="tabs__img-wrap">
+        <img class="lazy tabs__img" src="./assets/images/pixel.png" data-src="./assets/images/tabs/img_1.jpg" alt="картинка">
+        <img class="lazy tabs__img" src="./assets/images/pixel.png" data-src="./assets/images/tabs/img_2.jpg" alt="картинка">
+      </div>
+    </div>
+    <div class="tabs__content-item fadeTab" data-tab-content="4">
+      <dl class="tabs__top-list">
+        @@loop("blocks/others/tabs/elements/top-item.html", [
+          {
+            "term": "Запуск нового сайта:",
+            "descr": "июнь 2015 г."
+          },
+          {
+            "term": "Тематика:",
+            "descr": "производство и продажа изделий из натурального камня"
+          }
+        ])
+      </dl>
+      <div class="tabs__bottom-wrap">
+        @@loop("blocks/others/tabs/elements/bottom-item.html", [
+          {
+            "title": "Комплекс мер применяемых нами к проекту для&nbsp;достижения поставленных задач клиентом:",
+            "isList": true,
+            "listItem1": "Разработка удобного и продающего сайта",
+            "listItem2": "Вывод сайта в топ по коммерческим запросам",
+            "listItem3": "Увеличение поискового трафика",
+            "isBtn": false,
+          },
+          {
+            "title": "Результаты проведенных работ:",
+            "isList": true,
+            "listItem1": "96% запросов в ТОП-10 и рост продолжается",
+            "listItem2": "88% запросов в ТОП-3 видимость сайта по целевым и ключевым запросам растет",
+            "listItem3": "Рост трафика из поисковых систем в 6 раз и рост продолжается",
+            "isBtn": false
+          },
+          {
+            "title": "Статистика:",
+            "isList": false,
+            "isBtn": false,
+            "company": "Яндекс",
+            "keywordFirst": "мраморная плитка купить",
+            "keywordFirstPlace": "2",
+            "keywordSecond": "гранитная лестница",
+            "keywordSecondPlace": "1",
+            "keywordThird": "ступени из камня",
+            "keywordThirdPlace": "3"
+          },
+          {
+            "isList": false,
+            "isBtn": true,
+            "company": "Google",
+            "keywordFirst": "подоконники из оникса",
+            "keywordFirstPlace": "1, 2, 3",
+            "keywordSecond": "гранитная брусчатка",
+            "keywordSecondPlace": "1",
+            "keywordThird": "столешницы из камня купить",
+            "keywordThirdPlace": "1",
+          },
+        ])
+      </div>
+      <div class="tabs__img-wrap">
+        <img class="lazy tabs__img" src="./assets/images/pixel.png" data-src="./assets/images/tabs/img_1.jpg" alt="картинка">
+        <img class="lazy tabs__img" src="./assets/images/pixel.png" data-src="./assets/images/tabs/img_2.jpg" alt="картинка">
+      </div>
+    </div>
+    <div class="tabs__content-item fadeTab" data-tab-content="5">
+      <dl class="tabs__top-list">
+        @@loop("blocks/others/tabs/elements/top-item.html", [
+          {
+            "term": "Запуск нового сайта:",
+            "descr": "ноябрь 2015 г."
+          },
+          {
+            "term": "Тематика:",
+            "descr": "производство и продажа изделий из натурального камня"
+          }
+        ])
+      </dl>
+      <div class="tabs__bottom-wrap">
+        @@loop("blocks/others/tabs/elements/bottom-item.html", [
+          {
+            "title": "Комплекс мер применяемых нами к проекту для&nbsp;достижения поставленных задач клиентом:",
+            "isList": true,
+            "listItem1": "Разработка удобного и продающего сайта",
+            "listItem2": "Вывод сайта в топ по коммерческим запросам",
+            "listItem3": "Увеличение поискового трафика",
+            "isBtn": false,
+          },
+          {
+            "title": "Результаты проведенных работ:",
+            "isList": true,
+            "listItem1": "96% запросов в ТОП-10 и рост продолжается",
+            "listItem2": "88% запросов в ТОП-3 видимость сайта по целевым и ключевым запросам растет",
+            "listItem3": "Рост трафика из поисковых систем в 6 раз и рост продолжается",
+            "isBtn": false
+          },
+          {
+            "title": "Статистика:",
+            "isList": false,
+            "isBtn": false,
+            "company": "Яндекс",
+            "keywordFirst": "мраморная плитка купить",
+            "keywordFirstPlace": "2",
+            "keywordSecond": "гранитная лестница",
+            "keywordSecondPlace": "1",
+            "keywordThird": "ступени из камня",
+            "keywordThirdPlace": "3"
+          },
+          {
+            "isList": false,
+            "isBtn": true,
+            "company": "Google",
+            "keywordFirst": "подоконники из оникса",
+            "keywordFirstPlace": "1, 2, 3",
+            "keywordSecond": "гранитная брусчатка",
+            "keywordSecondPlace": "1",
+            "keywordThird": "столешницы из камня купить",
+            "keywordThirdPlace": "1",
+          },
+        ])
+      </div>
+      <div class="tabs__img-wrap">
+        <img class="lazy tabs__img" src="./assets/images/pixel.png" data-src="./assets/images/tabs/img_1.jpg" alt="картинка">
+        <img class="lazy tabs__img" src="./assets/images/pixel.png" data-src="./assets/images/tabs/img_2.jpg" alt="картинка">
+      </div>
+    </div>
+    <div class="tabs__content-item fadeTab" data-tab-content="6">
+      <dl class="tabs__top-list">
+        @@loop("blocks/others/tabs/elements/top-item.html", [
+          {
+            "term": "Запуск нового сайта:",
+            "descr": "февраль 2013 г."
+          },
+          {
+            "term": "Тематика:",
+            "descr": "производство и продажа изделий из натурального камня"
+          }
+        ])
+      </dl>
+      <div class="tabs__bottom-wrap">
+        @@loop("blocks/others/tabs/elements/bottom-item.html", [
+          {
+            "title": "Комплекс мер применяемых нами к проекту для&nbsp;достижения поставленных задач клиентом:",
+            "isList": true,
+            "listItem1": "Разработка удобного и продающего сайта",
+            "listItem2": "Вывод сайта в топ по коммерческим запросам",
+            "listItem3": "Увеличение поискового трафика",
+            "isBtn": false,
+          },
+          {
+            "title": "Результаты проведенных работ:",
+            "isList": true,
+            "listItem1": "96% запросов в ТОП-10 и рост продолжается",
+            "listItem2": "88% запросов в ТОП-3 видимость сайта по целевым и ключевым запросам растет",
+            "listItem3": "Рост трафика из поисковых систем в 6 раз и рост продолжается",
+            "isBtn": false
+          },
+          {
+            "title": "Статистика:",
+            "isList": false,
+            "isBtn": false,
+            "company": "Яндекс",
+            "keywordFirst": "мраморная плитка купить",
+            "keywordFirstPlace": "2",
+            "keywordSecond": "гранитная лестница",
+            "keywordSecondPlace": "1",
+            "keywordThird": "ступени из камня",
+            "keywordThirdPlace": "3"
+          },
+          {
+            "isList": false,
+            "isBtn": true,
+            "company": "Google",
+            "keywordFirst": "подоконники из оникса",
+            "keywordFirstPlace": "1, 2, 3",
+            "keywordSecond": "гранитная брусчатка",
+            "keywordSecondPlace": "1",
+            "keywordThird": "столешницы из камня купить",
+            "keywordThirdPlace": "1",
+          },
+        ])
+      </div>
+      <div class="tabs__img-wrap">
+        <img class="lazy tabs__img" src="./assets/images/pixel.png" data-src="./assets/images/tabs/img_1.jpg" alt="картинка">
+        <img class="lazy tabs__img" src="./assets/images/pixel.png" data-src="./assets/images/tabs/img_2.jpg" alt="картинка">
+      </div>
+    </div>
+  </div>
+</div>

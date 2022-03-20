@@ -1,0 +1,43 @@
+<div class="tabs__bottom-item">
+
+  @@if (isBtn) {
+    <button class="tabs__btn btn btn--border">
+      Показать еще статистику
+    </button>
+  }
+
+  @@if (!isBtn) {
+    <div class="tabs__bottom-title">
+      @@title
+    </div>
+  }
+
+  @@if (isList) {
+    <ul class="tabs__bottom-list">
+      <li class="tabs__list-item">@@listItem1</li>
+      <li class="tabs__list-item">@@listItem2</li>
+      <li class="tabs__list-item">@@listItem3</li>
+    </ul>
+  }
+
+  @@if (!isList) {
+    <dl class="tabs__table">
+      <div class="tabs__table-inner">
+        <dt class="tabs__table-term tabs__table-term--big">@@company</dt>
+        <dd class="tabs__table-descr tabs__table-descr--gray">место</dd>
+      </div>
+      <div class="tabs__table-inner">
+        <dt class="tabs__table-term">@@keywordFirst</dt>
+        <dd class="tabs__table-descr">@@keywordFirstPlace</dd>
+      </div>
+      <div class="tabs__table-inner">
+        <dt class="tabs__table-term">@@keywordSecond</dt>
+        <dd class="tabs__table-descr">@@keywordSecondPlace</dd>
+      </div>
+      <div class="tabs__table-inner">
+        <dt class="tabs__table-term">@@keywordThird</dt>
+        <dd class="tabs__table-descr">@@keywordThirdPlace</dd>
+      </div>
+    </dl>
+  }
+</div>
