@@ -10,7 +10,10 @@ app.select = {
     }
 
     selects.forEach((select) => {
-      select.addEventListener('click', () => {
+      select.addEventListener('click', (e) => {
+        // эта проверка нужна, чтобы выпадающий список не закрывался при клике на пустую область в нем
+        if (e.target.classList.contains('select__dropdown-inner')) return;
+
         const selectActive = document.querySelector('.select.is-active');
 
         if (selectActive && selectActive !== select) {

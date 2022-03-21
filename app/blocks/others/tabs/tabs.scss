@@ -161,7 +161,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: -2rem;
-    display: none;
+    // display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
   }
 
   &__img {
@@ -202,12 +205,12 @@
   display: block;
 }
 
-.tabs__img-wrap.show {
-  display: block;
-}
+// .tabs__img-wrap.show {
+//   max-height: 100vh;
+// }
 
 .fadeTab {
-  animation: fadeTab 2.5s;
+  animation: fadeTab 1s;
 }
 
 @keyframes fadeTab {

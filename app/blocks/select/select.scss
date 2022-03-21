@@ -158,15 +158,22 @@
       line-height: 1.9rem;
       border-bottom: 0.1rem solid $gray2;
       padding-bottom: 1rem;
+      padding-top: 1rem;
 
-      &:not(:last-child) {
-        margin-bottom: 1rem;
-      }
+      // &:not(:last-child) {
+      //   margin-bottom: 1rem;
+      // }
 
       &:hover {
         color: $yellow2;
         cursor: pointer;
       }
+    }
+  }
+
+  &__option {
+    &:first-child {
+      padding-top: 0;
     }
   }
 }
