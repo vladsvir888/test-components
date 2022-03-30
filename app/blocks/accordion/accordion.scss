@@ -1,3 +1,7 @@
+.faq {
+  padding-top: 10rem;
+}
+
 .accordion {
   counter-reset: faq;
 
@@ -61,13 +65,6 @@
     padding: 0 0 0 20rem;
     max-width: 110rem;
     overflow: hidden; // overflow: hidden обязателен!
-
-    // первый вариант
-    // height: 0;
-    // opacity: 0;
-    // transition: opacity 0.5s ease-in-out;
-
-    // второй вариант и третий вариант
     max-height: 0;
     transition: max-height 0.3s ease-in-out;
 
@@ -87,12 +84,6 @@
   @media (max-width: $sm) {
     padding-bottom: 2rem;
   }
-
-  // первый вариант
-  // .accordion__content {
-  //   height: auto;
-  //   opacity: 1;
-  // }
 
   .accordion__btn {
     color: $green;
