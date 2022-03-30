@@ -1,0 +1,35 @@
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  line-height: 3.8rem;
+
+  @media (max-width: $sm) {
+    font-size: 4rem;
+    line-height: 3.2rem;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+      padding-right: 2rem;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: ':';
+      }
+    }
+  }
+
+  &__text {
+    font-size: 1.2rem;
+  }
+}

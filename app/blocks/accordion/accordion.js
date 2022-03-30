@@ -56,7 +56,7 @@ app.accordion = {
     function toggleContent(item) {
       item.classList.toggle('is-active');
 
-      // находим последний элемент в родителе (то есть контент)
+      // находим последний дочерний элемент в родителе (то есть контент)
       const accordionContent = item.lastElementChild;
 
       // если у контента есть max-height, то обнуляем, в ином случае вычисляем его высоту через scrollHeight и добавляем инлайном

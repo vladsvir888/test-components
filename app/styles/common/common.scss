@@ -57,6 +57,10 @@ img {
   }
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   max-width: 156rem;
   margin: 0 auto;

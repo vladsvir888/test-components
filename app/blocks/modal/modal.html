@@ -1,0 +1,42 @@
+<section class="modal-section section">
+  <div class="container">
+    <h2 class="section__title">Модалка (с валидацией)</h2>
+
+    <!-- button 1 -->
+    <a href="#" class="modal-section__btn" data-modal="#modalOrder">
+      Заказать звонок
+      <svg width="41" height="22" viewBox="0 0 41 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30 1L40 11L30 21" stroke="#161616"/>
+        <path d="M0 11H40" stroke="#161616"/>
+      </svg>
+    </a>
+
+  </div>
+</section>
+
+<div id="modalOrder" class="modal-overlay">
+  <div class="modal">
+    <div class="form-wrap">
+      <h3 class="form-wrap__title">Consulte su reparación!</h3>
+      <form id="form" class="form-wrap__form form" autocomplete="off">
+        <div class="form-wrap__input">
+          <input type="text" name="name" class="input" id="name" placeholder="Su nombre*">
+          <small>Campo obligatorio</small>
+        </div>
+        <div class="form-wrap__input">
+          <input type="text" name="phone" class="input" id="phone" placeholder="Su teléfono*">
+          <small>Campo obligatorio</small>
+        </div>
+        <div class="form-wrap__input">
+          <input type="text" name="email" class="input" id="email" placeholder="Su correo electrónico">
+          <small>Campo obligatorio</small>
+        </div>
+        <div class="form-wrap__input">
+          <textarea name="message" class="input" placeholder="Mensaje"></textarea>
+        </div>
+        <button class="form-wrap__btn formBtn" type="submit">Enviar</button>
+      </form>
+    </div>
+    <button class="btn-close closeBtn"></button>
+  </div>
+</div>
