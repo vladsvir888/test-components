@@ -1,7 +1,7 @@
 app.timer = {
   name: 'timer',
   init() {
-    let deadline = new Date(2022, 2, 31);
+    const deadline = new Date(2022, 3, 5);
 
     let timerId;
 
@@ -14,9 +14,15 @@ app.timer = {
       const now = new Date();
       const diff = deadline - now; // расчёт оставшегося времени = конечная дата - текущая дата (получим таймстамп)
 
-      if (diff < 0) { // по истечении времени устанавливаем новый дедлайн и рекурсивно вызываем countdownTimer
-        deadline = new Date(2022, 2, 31);
-        timerId = setInterval(countdownTimer, 1000);
+      if (diff < 0) { // по истечении времени останавливаем таймер timerId
+        clearInterval(timerId);
+
+        document.getElementById('days').textContent = '00';
+        document.getElementById('hours').textContent = '00';
+        document.getElementById('minutes').textContent = '00';
+        document.getElementById('seconds').textContent = '00';
+
+        return;
       }
 
       const days = Math.floor(diff / 1000 / 60 / 60 / 24);
